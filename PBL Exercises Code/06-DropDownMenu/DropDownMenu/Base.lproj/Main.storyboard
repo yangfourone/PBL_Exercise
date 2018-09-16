@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="學號：B10302123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dB-sJ-rbF">
+                                <rect key="frame" x="20" y="58" width="394" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="姓名：楊士逸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGE-Zb-g23">
+                                <rect key="frame" x="20" y="115" width="128.33333333333334" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cgs-Yr-PTr">
+                                <rect key="frame" x="20" y="241" width="86" height="49.999999999999972"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-Pm-INd">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3CJ-tT-uSB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="選擇茶類"/>
+                                        <connections>
+                                            <action selector="startSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCs-GD-bZD"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQP-MU-h6L">
+                                        <rect key="frame" x="0.0" y="-221.66666666666666" width="86" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Qpk-Yt-QoY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="紅茶"/>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qr2-MK-2az"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZy-xd-FTe">
+                                        <rect key="frame" x="0.0" y="-221.66666666666666" width="86" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DfC-ot-Rpe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="奶茶"/>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43e-dk-LYl"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA7-ya-JKK">
+                                        <rect key="frame" x="0.0" y="-221.66666666666666" width="86" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Fyi-ln-SRo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="綠茶"/>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHu-OR-nAv"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oej-z2-Mvk">
+                                        <rect key="frame" x="0.0" y="-221.66666666666666" width="86" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="udE-Bx-bfE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="青茶"/>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCC-BG-5ga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你所選的茶類為：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9A-2N-CI7">
+                                <rect key="frame" x="20" y="181" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cgs-Yr-PTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8ro-SE-CgV"/>
+                            <constraint firstItem="7dB-sJ-rbF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="D8B-sH-8Kj"/>
+                            <constraint firstItem="Cgs-Yr-PTr" firstAttribute="firstBaseline" secondItem="w9A-2N-CI7" secondAttribute="baseline" constant="50" id="Dma-vR-BzS"/>
+                            <constraint firstItem="w9A-2N-CI7" firstAttribute="firstBaseline" secondItem="NGE-Zb-g23" secondAttribute="baseline" constant="50" id="akJ-Q6-BET"/>
+                            <constraint firstItem="7dB-sJ-rbF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="eBt-WB-FDm"/>
+                            <constraint firstItem="NGE-Zb-g23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nP5-Jh-LMR"/>
+                            <constraint firstItem="NGE-Zb-g23" firstAttribute="firstBaseline" secondItem="7dB-sJ-rbF" secondAttribute="baseline" constant="50" id="qNe-0S-gUl"/>
+                            <constraint firstItem="w9A-2N-CI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yfB-Zd-Z5L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="choosing" destination="w9A-2N-CI7" id="ziO-ES-0Bb"/>
+                        <outletCollection property="options" destination="CQP-MU-h6L" collectionClass="NSMutableArray" id="7KF-cV-JS1"/>
+                        <outletCollection property="options" destination="IZy-xd-FTe" collectionClass="NSMutableArray" id="jdD-mx-Ola"/>
+                        <outletCollection property="options" destination="vA7-ya-JKK" collectionClass="NSMutableArray" id="pG6-1C-uZW"/>
+                        <outletCollection property="options" destination="Oej-z2-Mvk" collectionClass="NSMutableArray" id="QAb-Ud-coM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
